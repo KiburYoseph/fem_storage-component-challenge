@@ -1,3 +1,79 @@
 body {
     margin: 0;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(229, 57%, 11%);
+    font-family: 'Raleway', sans-serif;
 }
+
+.bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.all {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.first {
+    border-radius: 12px 40% 12px 12px;
+    width: 310px;
+    height: 200px;
+    background-color: hsl(228, 56%, 26%);
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    padding-left: 45px;
+}
+
+.iconsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon {
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 12px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second {
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 12px;
+    width: 560px;
+    height: 150px;
+    position: relative;
+    top: 25px;
+    z-index: 10; 
+}
+
+p {
+    color: hsl(243, 100%, 93%);
+    font-size: 14px;
+}
+
+.GB {
+    color: white;
+    font-weight: 700;
+}
+
+
+/*185 GB Left*/
