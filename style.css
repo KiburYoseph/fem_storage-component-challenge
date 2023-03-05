@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
     position: relative;
     height: 100vh;
     width: 100vw;
@@ -7,11 +8,6 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-main {
-    position: relative;
-    bottom: 70px;
-    right: 30px;
-}
 
 .bg {
     position: absolute;
@@ -27,6 +23,9 @@ main {
     justify-content: center;
     align-items: center;
     gap: 40px;
+    position: relative;
+    bottom: 70px;
+    right: 30px;
 }
 
 .first {
@@ -133,8 +132,8 @@ p {
     height: 75px;
     background-color: white;
     border-radius: 9px 9px 0 9px;
-    top: 340px;
-    left: 1110px;
+    top: -50px;
+    left: 290px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,4 +164,30 @@ p {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: hsl(229, 7%, 55%);
+}
+
+@media (max-width: 1004px){
+    .all {
+        flex-direction: column;
+    }
+    .second{
+        width: 500px;
+    }
+    .speechbubble {
+        top: -50px;
+        left: 250px;
+    }
+}
+@media (max-width: 490px){
+    .bg {
+        opacity: 0;
+    }
+    .all {
+        width: 100vw;
+        background-image: url("images/bg-mobile.png");
+        background-repeat: no-repeat;
+        background-position: 100%;
+        background-size: contain;
+
+    }
 }
