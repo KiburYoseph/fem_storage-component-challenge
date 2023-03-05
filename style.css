@@ -177,6 +177,7 @@ p {
         top: -50px;
         left: 250px;
     }
+    
 }
 @media (max-width: 490px){
     .bg {
@@ -188,6 +189,7 @@ p {
         background-repeat: no-repeat;
         background-position: 100%;
         background-size: contain;
-
+        background-attachment: fixed;
     }
+    
 }
